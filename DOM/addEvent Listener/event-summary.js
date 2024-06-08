@@ -25,3 +25,21 @@ document.getElementById('post-btn').addEventListener('click', (e) =>{
 
     
 })
+
+
+
+//create github delete button system
+    document.getElementById('delete-input').addEventListener('keyup', (e)=>{
+        const deleteText = e.target.value;
+
+        const deleteBtn = document.getElementById('delete-btn');
+        
+        if(deleteText === 'delete'){
+            deleteBtn.removeAttribute('disabled');
+        }
+        else{
+            deleteBtn.setAttribute('disabled', true);
+        }
+        
+        
+    })
