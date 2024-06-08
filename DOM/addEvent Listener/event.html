@@ -20,6 +20,8 @@
     <button id="make-yellow">Yellow</button>
     <button id="blue-button">Blue</button>
     <button id="pink-button">Pink</button>
+    <button id="cyan-button">Cyan</button>
+    <button id="orange-button">Orange</button>
 
 
 
@@ -45,10 +47,27 @@
             document.body.style.backgroundColor = 'blue';
         }
 
+        
+
+        //event option: 4
         const pinkButton = document.getElementById('pink-button');
-        pinkButton.onclick = function makePink(){
+        pinkButton.addEventListener('click', makePink);
+
+        function makePink(){
             document.body.style.backgroundColor = 'pink';
         }
+
+        //option: 4 another
+        const cyanButton = document.getElementById('cyan-button');
+        cyanButton.addEventListener('click', function (){
+            document.body.style.backgroundColor = 'cyan';
+        })
+
+        //option: 4 most useable
+         document.getElementById('orange-button').addEventListener('click', function (){
+            document.body.style.backgroundColor = 'orange'
+         })
+        
 
     </script>
 </body>
