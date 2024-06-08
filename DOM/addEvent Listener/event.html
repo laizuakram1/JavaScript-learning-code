@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>addEventListener</title>
     <style>
-        body{
+        .button-container{
             width: 100%;
-            height: 100vh;
+            height: 50vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -16,59 +16,49 @@
     </style>
 </head>
 <body>
-    <button onclick="makeGreen()">Make Green</button>
-    <button id="make-yellow">Yellow</button>
-    <button id="blue-button">Blue</button>
-    <button id="pink-button">Pink</button>
-    <button id="cyan-button">Cyan</button>
-    <button id="orange-button">Orange</button>
+
+    <div class="button-container">
+        <button onclick="makeGreen()">Make Green</button>
+        <button id="make-yellow">Yellow</button>
+        <button id="blue-button">Blue</button>
+        <button id="pink-button">Pink</button>
+        <button id="cyan-button">Cyan</button>
+        <button id="orange-button">Orange</button>
+    </div>
 
 
+    <section>
+        <h1>Event Summary</h1>
+        <div>
+            <p id="update-text">input text</p>
+            <input id="input-field" type="text">
+            <button id="update-button">Update</button>
+        </div>
+    </section>
 
-    <script>
-        // event option: 1
-        function makeGreen(){
-            document.body.style.backgroundColor = 'green';
-        }
-
-
-        //event option: 2
-        const yellowBtn = document.getElementById('make-yellow');
-        yellowBtn.onclick = makeYellow;
-
-        function makeYellow(){
-            document.body.style.backgroundColor = 'yellow';
-        }
+    <br><br><br>
 
 
-        //event option: 3
-        const blueButton = document.getElementById('blue-button');
-        blueButton.onclick = function makeBlue(){
-            document.body.style.backgroundColor = 'blue';
-        }
+    <h1>Comment Box</h1>
+    <section id="comment-box-container">
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, fuga repellendus. Aperiam?</p>
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dicta deserunt officia laudantium!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatum temporibus rerum aspernatur, fuga quia sapiente, accusantium ex molestias magni voluptates minus porro earum blanditiis atque illo repudiandae. Ipsa.</p>
+        </div>
+    </section>
 
-        
+    <textarea id="comment-field" cols="50" rows="5"></textarea>
+    <br>
+    <button id="post-btn">Post</button>
 
-        //event option: 4
-        const pinkButton = document.getElementById('pink-button');
-        pinkButton.addEventListener('click', makePink);
 
-        function makePink(){
-            document.body.style.backgroundColor = 'pink';
-        }
-
-        //option: 4 another
-        const cyanButton = document.getElementById('cyan-button');
-        cyanButton.addEventListener('click', function (){
-            document.body.style.backgroundColor = 'cyan';
-        })
-
-        //option: 4 most useable
-         document.getElementById('orange-button').addEventListener('click', function (){
-            document.body.style.backgroundColor = 'orange'
-         })
-        
-
-    </script>
+    
+    <script src="./event.js"></script>
+    <script src="./event-summary.js"></script>
 </body>
 </html>
