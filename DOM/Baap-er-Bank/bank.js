@@ -25,3 +25,26 @@ document.getElementById('deposit-btn').addEventListener('click', () =>{
      
     
 })
+
+//withdraw and minus balance
+document.getElementById('withdraw-btn').addEventListener('click', () =>{
+    
+    //get withdraw amount
+    const withdrawInput = document.getElementById('withdraw-input');
+    const withdrawAmountValue = parseFloat(withdrawInput.value);
+    withdrawInput.value = '';
+
+    //update withdraw card
+    const withdrawCard = document.getElementById('withdraw-card');
+    const withdrawCardValue = parseFloat(withdrawCard.innerText);
+    const withdrawAmountTotal = withdrawCardValue + withdrawAmountValue; 
+    withdrawCard.innerText = withdrawAmountTotal;
+    
+   
+    //add withdraw amount in balance card
+    const balanceCard = document.getElementById('balance-card');
+    const previousBalance = parseFloat(balanceCard.innerText);
+    const newBalance = previousBalance - withdrawAmountValue;
+    balanceCard.innerText = newBalance;
+    
+})
