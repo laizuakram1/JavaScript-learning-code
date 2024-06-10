@@ -16,7 +16,7 @@
             <div class="grid grid-cols-3 gap-6 justify-items-center mt-8">
                 <div class="w-full bg-green-400 px-6 py-8 rounded-lg text-white">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h1 class="text-5xl">$00</h1>
+                    <h1 class="text-5xl">$<span id="deposit-card"></span></h1>
                 </div>
 
                 <div class="w-full bg-orange-300 px-6 py-8 rounded-lg text-white">
@@ -26,7 +26,7 @@
 
                 <div class="w-full bg-violet-400 px-6 py-8 rounded-lg text-white">
                     <h4 class="text-2xl">Balance</h4>
-                    <h1 class="text-5xl">$1240</h1>
+                    <h1 class="text-5xl">$<span id="balance-card">1240</span></h1>
                 </div>
 
                 
@@ -38,16 +38,19 @@
             <div class="bg-violet-100 px-4 py-6">
                 <h4 class="text-2xl">Please Deposit</h4>
                 <input class="w-2/4 h-8 block my-2 rounded-md px-3 my-4" type="number" id="deposit-input" placeholder="Deposit amount">
-                <button class="bg-orange-500 px-6 py-2 font-semibold text-white rounded-lg">Deposit</button>
+                <button id="deposit-btn" class="bg-orange-500 px-6 py-2 font-semibold text-white rounded-lg">Deposit</button>
             </div>
 
             <div class="bg-pink-200 px-4 py-6">
                 <h4 class="text-2xl">Please Withdraw</h4>
-                <input class="w-2/4 h-8 block my-2 rounded-md px-3 my-4" type="number" id="deposit-input" placeholder="Withdraw amount">
-                <button class="bg-orange-500 px-6 py-2 font-semibold text-white rounded-lg">Withdraw</button>
+                <input class="w-2/4 h-8 block my-2 rounded-md px-3 my-4" type="number" id="withdraw-input" placeholder="Withdraw amount">
+                <button id="withdraw-btn" class="bg-orange-500 px-6 py-2 font-semibold text-white rounded-lg">Withdraw</button>
             </div>
          </section>
     </main>
 
+
+
+    <script src="./bank.js"></script>
 </body>
 </html>
