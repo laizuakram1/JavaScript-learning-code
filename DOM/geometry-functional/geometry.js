@@ -15,6 +15,7 @@ document.getElementById('triangle-btn').addEventListener('click', () =>{
     // const heightValue = parseFloat(heightInput.value);
     const heightValue = getInputValue('height');
 
+    
 
     //area set
     const area = 0.5 * baseValue * heightValue;
