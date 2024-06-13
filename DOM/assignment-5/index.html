@@ -28,7 +28,7 @@
                     <h1 class="text-xl font-bold mb-4">Kitchen-wear</h1>
                     <div class="flex gap-x-4">
                         <!---first kitchen card-->
-                        <div id="kitchen-hata" class="card w-64 bg-base-100 border">
+                        <div id="kitchen-hata" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod1.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -46,7 +46,7 @@
                           </div>
 
                         <!---second kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <div id="cutting-plate" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod2.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -58,13 +58,13 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">cutting plate</h2>
+                              <h2 id="cutting-plate-name" class="text-sm font-bold">cutting plate</h2>
                               <p class="text-sm font-medium text-slate-400">TK <span id="cutting-plate-price">49.00</span></p>
                             </div>
                           </div>
 
                         <!---third kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <div id="curry-coocker" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod3.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -76,7 +76,7 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">curry coocker</h2>
+                              <h2 id="curry-coocker-name" class="text-sm font-bold">curry coocker</h2>
                               <p class="text-sm font-medium text-slate-400">TK <span id="curry-coocker-price">129.00</span></p>
                             </div>
                           </div>
@@ -86,8 +86,8 @@
                 <div id="sports-container" class="mt-14">
                     <h1 class="text-xl font-bold mb-4">Sports-wear</h1>
                     <div class="flex gap-x-4">
-                        <!---first kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <!---first sports card-->
+                        <div id="sports-cap" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod4.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -99,13 +99,13 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">Kitchen Hata</h2>
-                              <p id="product-price" class="text-sm font-medium text-slate-400">39.00 TK</p>
+                                  <h2 id="sports-cap-name" class="text-sm font-bold">sports cap</h2>
+                                  <p class="text-sm font-medium text-slate-400">TK <span id="sports-cap-price">129.00</span></p>
                             </div>
                           </div>
 
-                        <!---second kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <!---second sports card-->
+                        <div id="sports-jersey" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod5.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -117,13 +117,13 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">Kitchen Hata</h2>
-                              <p id="product-price" class="text-sm font-medium text-slate-400">39.00 TK</p>
+                                  <h2 id="sports-jersey-name" class="text-sm font-bold">sports jersey</h2>
+                                  <p class="text-sm font-medium text-slate-400">TK <span id="sports-jersey-price">129.00</span></p>
                             </div>
                           </div>
 
-                        <!---third kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <!---third sports card-->
+                        <div id="sports-shoe" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod6.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -135,18 +135,19 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">Kitchen Hata</h2>
-                              <p id="product-price" class="text-sm font-medium text-slate-400">39.00 TK</p>
+                                  <h2 id="sports-shoe-name" class="text-sm font-bold">sports cap</h2>
+                                  <p class="text-sm font-medium text-slate-400">TK <span id="sports-shoe-price">129.00</span></p>
                             </div>
                           </div>
 
                     </div>
                 </div>
+
                 <div id="furniture-container" class="mt-14">
                     <h1 class="text-xl font-bold mb-4">Furniture</h1>
                     <div class="flex gap-x-4">
-                        <!---first kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <!---first furniture card-->
+                        <div id="foaming-chair" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod7.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -158,13 +159,13 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">foaming chair</h2>
-                              <p id="product-price" class="text-sm font-medium text-slate-400">39.00 TK</p>
+                                  <h2 id="foaming-chair-name" class="text-sm font-bold">Foaming chair</h2>
+                                  <p class="text-sm font-medium text-slate-400">TK <span id="foaming-chair-price">129.00</span></p>
                             </div>
                           </div>
 
-                        <!---second kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <!---second furniture card-->
+                        <div id="folding-chair" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod8.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -176,13 +177,13 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">folding chair</h2>
-                              <p id="product-price" class="text-sm font-medium text-slate-400">99.00 TK</p>
+                                  <h2 id="folding-chair-name" class="text-sm font-bold">folding chair</h2>
+                                  <p class="text-sm font-medium text-slate-400">TK <span id="folding-chair-price">129.00</span></p>
                             </div>
                           </div>
 
-                        <!---third kitchen card-->
-                        <div class="card w-64 bg-base-100 border">
+                        <!---third furniture card-->
+                        <div id="songle-sofa" class="card w-64 bg-base-100 border cursor-pointer">
                             <figure class="px-10 pt-10">
                               <img src="./images/prod9.png" alt="product" class="rounded-xl" />
                             </figure>
@@ -194,14 +195,16 @@
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
-                              <h2 id="product-name" class="text-sm font-bold">single sofa</h2>
-                              <p id="product-price" class="text-sm font-medium text-slate-400">1909.00 TK</p>
+                                  <h2 id="songle-sofa-name" class="text-sm font-bold">single sofa</h2>
+                                  <p class="text-sm font-medium text-slate-400">TK <span id="songle-sofa-price">129.00</span></p>
                             </div>
                           </div>
 
                     </div>
                 </div>
             </div>
+
+
             <div id="coupon-area" class="mt-6 p-4">
                 <div id="coupon" class="bg-white p-4 rounded">
                     <h3 class="text-sm font-medium mb-2">Have Coupon?</h3>
