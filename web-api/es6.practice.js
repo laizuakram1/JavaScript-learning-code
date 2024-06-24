@@ -48,3 +48,44 @@ const elements = oddNumbers.map((ele) => {
     const evenNumber = ele + 1;
     // console.log(evenNumber)
 })
+
+
+
+// task- 2
+const numbersArr = [22, 33, 43, 30, 59, 70, 56, 75,99];
+const devisibleNumbers = numbersArr.filter((ele) =>{
+    // if(ele % 10 == 0){
+    //     console.log(ele)
+    // }else{
+    //     console.log('this are nod devisible')
+    // }
+   
+})
+
+const names = ['apple', 'banana', 'apple', 'lyche', 'mango', 'apple']
+
+const fruits = names.filter((ele) =>ele.includes('lyche'));
+
+
+// task-3: filter in array of object and display position
+
+const webDevelopers = [
+    {name: 'Laizu', age: 26, position: 'Junior'},
+    {name: 'Nabiha', age: 6, position: 'senior'},
+    {name: 'Najmin', age: 24, position: 'senior'}
+]
+
+const position = webDevelopers.filter((ele) => ele.position === 'senior' )
+
+
+
+//task-3 : get peoples age and calculate total of age
+const peoples = [
+    {name: 'Afra', age: 3},
+    {name: 'Laizu', age: 26},
+    {name: 'najmin', age: 23},
+    {name: 'nasir', age: 24}
+
+]
+const age = peoples.map((e) => e.age)
+const totalAge = age.reduce((prev, current) => prev + current)
