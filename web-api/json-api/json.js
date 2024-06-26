@@ -20,4 +20,5 @@ const jsonObject = JSON.stringify(myShop);
 
 //JSON Parse = string(JSON data) to object
 const parseData = JSON.parse(jsonObject)
-console.log(parseData);
+
+// console.log(parseData);
