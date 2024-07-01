@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header></header>
+    <main class="my-12 text-center">
+        <!-- search bar -->
+        <section>
+            <input
+            type="text"
+            placeholder="Search here..."
+            class="input input-bordered input-primary w-full max-w-xs" />
+
+            <button class="btn btn-active btn-primary">Search</button>
+            <button onclick="loadPhone()" class="btn btn-active btn-secondary">Load Phone</button>
+        </section>
+        <hr class="mt-8">
+
+        <section>
+            <div id="phones-container" class="grid grid-cols-3 gap-y-4">
+                <!-- card -->
+                
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+    <script src="./phone-hunter.js"></script>
+</body>
+</html>

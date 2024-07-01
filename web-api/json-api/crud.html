@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-API</title>
+    <style>
+        .btn-primary{
+            padding: 10px 20px;
+            background-color: rgb(75, 219, 75);
+            border-radius: 5px;
+            border:none;
+            outline: 0;
+            color: white;
+            cursor: pointer
+        }
+        .btn-secondary{
+            padding: 10px 20px;
+            background-color: yellowgreen;
+            border-radius: 5px;
+            border:none;
+            outline: 0;
+            color: white;
+            cursor: pointer
+        }
+        .user{
+            padding: 40px;
+            border-radius: 5px;
+            background-color: rgb(205, 134, 205);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- Get users with http Get method -->
+        <h1>Get and Display All Users</h1>
+        <button onclick="loadUsers()" class="btn-primary">Load Users</button>
+        <div id="users-container">
+
+        </div>
+
+        <!-- post users with http POST method -->
+         <h1>POST Data</h1>
+         <button onclick="postUsers()" class="btn-secondary">Post Users</button>
+
+        <!-- PUT users with http PUT method -->
+         <h1>PUT Data</h1>
+         <button onclick="putUsers()" class="btn-primary">Put Users</button>
+
+    </main>
+
+    <script src="./crud.js"></script>
+</body>
+</html>

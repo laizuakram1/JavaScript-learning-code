@@ -30,6 +30,8 @@ function dynamicDisplay(posts){
     for(const post of posts){
         
         const postDiv = document.createElement('div');
+        postDiv.classList.add('post');
+
         postDiv.innerHTML = `
             <h3>${post.name}</h3>
         
