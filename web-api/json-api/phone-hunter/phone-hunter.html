@@ -13,19 +13,31 @@
         <!-- search bar -->
         <section>
             <input
+            id="search-field"
             type="text"
             placeholder="Search here..."
             class="input input-bordered input-primary w-full max-w-xs" />
 
-            <button class="btn btn-active btn-primary">Search</button>
-            <button onclick="loadPhone()" class="btn btn-active btn-secondary">Load Phone</button>
+            <button onclick="searchText()" class="btn btn-active btn-primary">Search</button>
+            <!-- <button onclick="loadPhone()" class="btn btn-active btn-secondary">Load Phone</button> -->
         </section>
         <hr class="mt-8">
 
+        <!-- Loading spinner -->
+        <section>
+            <div id="loading-spinner" class="mt-24 text-accent hidden">
+                <span class="loading loading-ring loading-lg"></span>
+            </div>
+        </section>
+
+        <!-- display phones -->
         <section>
             <div id="phones-container" class="grid grid-cols-3 gap-y-4">
                 <!-- card -->
                 
+            </div>
+            <div id="showAll-btn" class="mt-6 hidden">
+                <button class="btn btn-outline btn-success">Show All</button>
             </div>
         </section>
 
