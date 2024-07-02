@@ -54,7 +54,7 @@ const displayPhones = (phones) =>{
                       <h2 class="card-title">${phone.phone_name}</h2>
                       <p>${phone.slug}</p>
                       <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="showDetails('${phone.slug}')" class="btn btn-primary">Details</button>
                       </div>
                     </div>
         `
@@ -62,6 +62,35 @@ const displayPhones = (phones) =>{
         phonesContainer.appendChild(phoneDiv);
     })
     loadingSpinner(false);
+}
+
+//show details button
+const showDetails = async (id)=>{
+    const res = await fetch(`https://openapi.programming-hero.com/api/phone/${id}`)
+    const data = await res.json();
+    const detailsData = data.data;
+
+   
+    handleModals(detailsData);
+    
+}
+//toggle modals
+const handleModals = (data)=>{
+    console.log(data)
+    phone_details_modals.showModal()
+    
+    const modalsContainer = document.getElementById('modals-container');
+    modalsContainer.innerHTML = `
+        <h3 class="text-lg font-bold">${data.name}</h3>
+        <p class="py-4">Specificaltion:</p>
+        <p class="py-4">Display:</p>
+        <p class="py-4">Display:</p>
+        <p class="py-4">Display:</p>
+        <p class="py-4">Display:</p>
+
+    `
+   
+
 }
 
 
