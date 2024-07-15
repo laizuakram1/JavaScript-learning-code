@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tube</title>
+    <link rel="stylesheet" href="./my-tube.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./play-icon.png" alt="play icon">
+                <p>My Tube</p>
+            </div>
+            <div class="sort-views secondary-btn">Sort by views</div>
+            <div class="blog-btn primary-btn">Blog</div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <div class="tabs">
+            <button onclick="loadData()" class="secondary-btn active-btn">All</button>
+            <button class="secondary-btn">Music</button>
+            <button class="secondary-btn">Comedy</button>
+            <button class="secondary-btn">Drawing</button>
+        </div>
+
+        <section>
+            <div id="display">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./my-tube.js"></script>
+</body>
+</html>
