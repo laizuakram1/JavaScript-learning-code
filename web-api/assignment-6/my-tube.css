@@ -23,6 +23,22 @@
     background-color: tomato;
     color: white;
 }
+#display{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 15px;
+    justify-items: center;
+}
+.card{
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid green;
+}
+.card img{
+    width: 100%;
+   
+}
 
 nav{
     height: 100px;
@@ -32,6 +48,7 @@ nav{
     padding: 0px 15px;
     font-size: 24px;
     font-weight:500;
+    cursor: pointer;
 }
 .logo{
     display: flex;
@@ -43,5 +60,5 @@ header > hr{
 }
 .tabs{
     text-align: center;
-    margin-top: 30px;
+    margin: 30px;
 }
